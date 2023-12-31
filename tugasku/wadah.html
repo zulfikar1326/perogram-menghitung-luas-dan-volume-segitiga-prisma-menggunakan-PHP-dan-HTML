@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisma Segitiga Calculator</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .container1{
+        height: 70px;
+
+    }
+    .container{
+        line-height: 10vh;  
+        margin: 50px auto; 
+    }
+    .container #button {
+        width: 65px;
+        height: 30px;
+        background-color: black;
+        color: white;
+    }
+    .container #button{
+        position: absolute;
+        margin: 0 auto;
+        top: 65vh;
+    }
+    </style>
+</head>
+<body>
+<div class="container1"></div>
+<h2 style="text-align: center;">Prisma Segitiga Calculator</h2>
+<center>
+<div class="container">
+<table>
+<form action="php.php" method="post">
+    <tr>
+        <td>
+            <label for="alas">Alas Segitiga:</label>
+        </td>
+        <td>
+        <input type="text" name="alas" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+        <label for="tinggi_segitiga">Tinggi Segitiga:</label>
+        </td>
+        <td>
+        <input type="text" name="tinggi_segitiga" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>       
+        <label for="tinggi_prisma">Tinggi Prisma:</label>
+        </td>
+        <td>
+        <input type="text" name="tinggi_prisma" required>
+        </td>
+    </tr>
+    <br>
+        <input id="button" type="submit" value="Hitung">
+</form>
+</table>
+</div>
+</center>
+
+
+</body>
+</html>
